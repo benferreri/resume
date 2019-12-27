@@ -1,15 +1,121 @@
 \documentclass[12pt]{article}
 
+\def\myname{Ben Ferreri}
+\def\myemail{benferreri@case.edu}
+\def\myphone{516.205.4075}
+\def\mylinkedin{benferreri}
+
 \usepackage{graphicx}
 \usepackage{adjustbox}
-\usepackage[a4paper, total={7in, 10in}]{geometry}
+\usepackage[a4paper, total={7in, 9in}]{geometry}
 \usepackage{changepage}
+\usepackage[T1]{fontenc}
+\usepackage{booktabs}
+\usepackage{times}
+
+\newcommand*{\titlefont}{\fontfamily{pnc}\selectfont}
 
 \title{Ben Ferreri Resume}
 \author{Ben Ferreri}
 \begin{document}
 \pagenumbering{gobble}
+\setlength\parindent{0pt}
 
-a
+{\titlefont\Huge\textsc{\textbf{\myname{}}}}
+
+\medskip
+
+\centerline{\myphone\enspace{}|\enspace{}\myemail\enspace{}|\enspace{}https://linkedin.com/in/\mylinkedin}
+
+\bigskip
+
+{\titlefont\large\textsc{\textbf{Education}}}
+\hrulefill{}\\
+\smallskip\\
+%
+\begin{tabular} {l p{130mm}}
+    2017--2021 & 
+    Case Western Reserve University, Case School of Engineering \newline 
+    Bachelor of Science in Electrical and Computer Engineering, May 2021 \newline
+    GPA:\@ 4.0 \newline
+    Dean's High Honors \\
+
+    Related Courses & Electronic Circuits, Data Structures, Logic Design, Computer Networks
+\end{tabular}
+
+\bigbreak{}
+
+{\titlefont\large\textsc{\textbf{Experience}}}
+\hrulefill{}\\
+\smallskip\\
+%
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill} } l r}Teaching Assistant for Intro to Java Programming, \textit{CWRU}, \textit{Cleveland, OH} & 2019 \end{tabular*}
+
+\vspace{-\topsep}
+\begin{itemize}
+    \setlength{\parskip}{0pt}
+    \setlength{\itemsep}{0pt plus 1pt}
+    \item Assist students during lab session to explain programming concepts and debug code
+    \item Hold weekly office hour to aid students with specific problems or reiterate concepts
+    \item Test and grade code for weekly labs and biweekly programming projects
+\end{itemize}
+
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill} } l r}Instructor, \textit{Mathnasium}, \textit{Levittown, NY} & Summers 2017--2019 \end{tabular*}
+
+\vspace{-\topsep}
+\begin{itemize}
+    \setlength{\parskip}{0pt}
+    \setlength{\itemsep}{0pt plus 1pt}
+    \item Instructed students in critical math concepts, from basic addition to calculus
+    \item Developed students' ability to solve problems by thinking critically and analyzing from\\ different perspectives
+    \item Proficiently communicated with students to relate complex mathematics in an\\ easy-to-understand way
+\end{itemize}
+
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill} } l r}Robotics Team Electrical Lead, \textit{CWRUbotix NRC Combat}, \textit{Cleveland, OH} & 2018--2019 \end{tabular*}
+
+\vspace{-\topsep}
+\begin{itemize}
+    \setlength{\parskip}{0pt}
+    \setlength{\itemsep}{0pt plus 1 pt}
+    \item Designed circuitry for communication between remote, microcontroller, and motors
+    \item Designed power system of the robot
+    \item Selected electrical components to best cater to the needs of the mechanical components of the robot
+\end{itemize}
+\vspace{-\topsep}
+
+\bigbreak{}
+
+{\titlefont\large\textsc{\textbf{Projects}}}
+\hrulefill{}\\
+\smallskip\\
+%
+\begin{tabular*}{\textwidth}{@{\extracolsep{\fill} } l r}License-Plate Identifying Camera, \textit{HackCWRU}, \textit{Cleveland, OH} & 2019 \end{tabular*}
+
+\vspace{-\topsep}
+\begin{itemize}
+    \setlength{\parskip}{0pt}
+    \setlength{\itemsep}{0pt plus 1pt}
+    \item Made a small RPi camera that reads and displays a license plate on button press
+    \item Designed circuit for I2C communication and level shifting between components
+    \item Interfaced with text-recognition software for delivering image-read text to display
+\end{itemize}
+\vspace{-\topsep}
+
+\bigbreak{}
+
+{\titlefont\large\textsc{\textbf{Skills and Interests}}}
+\hrulefill{}\\
+%
+\vspace{-\topsep}
+\begin{itemize}
+    \setlength{\parskip}{0pt}
+    \setlength{\itemsep}{0pt plus 1 pt}
+    \item Programming: Java, Python, C, Bash
+    \item Software: Git, LaTeX, Altium Designer, Microsoft Office, LibreOffice, Google Suite
+    \item Efficient use of circuits lab equipment, i.e.\ oscilloscopes, soldering, etc.
+    \item Proficient in computer systems, such as Linux server administration
+    \item Avid music-listener and reader; Treasurer of The ABC Book Club on Case campus
+
+\end{itemize}
 
 \end{document}        
